@@ -1,8 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .page__body {
   font-family: "Cuprum", sans-serif;
   min-height: 100vh;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 img {
