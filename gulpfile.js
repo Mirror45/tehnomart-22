@@ -1,4 +1,4 @@
-const Key = "html/new";
+const Key = "tehnomart";
 const gulp = require("gulp");
 const del = require("del");
 const sass = require("gulp-sass")(require("sass"));
