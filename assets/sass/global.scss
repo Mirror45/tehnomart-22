@@ -1,8 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page__body {
   font-family: "Cuprum", sans-serif;
   min-height: 100vh;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 img {
@@ -30,11 +36,13 @@ img {
 }
 
 .button {
+  display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 12px;
   border: none;
+  text-align: center;
   color: $basic-white;
 
   &--accent {
@@ -59,5 +67,27 @@ img {
     &:active {
       background-color: $status-secondary-active;
     }
+  }
+}
+
+.new {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    transform: rotate(45deg);
+    content: "New";
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    padding-top: 7px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $basic-red;
   }
 }

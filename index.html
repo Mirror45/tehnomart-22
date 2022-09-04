@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tehnomart</title>
+    <title>Техномарт</title>
     <link rel="icon" href="assets/img/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="assets/img/icon/favicon.svg" type="image/svg+xml" />
     <link
@@ -22,7 +22,115 @@
   </head>
   <body class="page__body">
     <header class="main-header"></header>
-    <main class="page__main"></main>
+    <main class="page__main">
+      <h1 class="visually-hidden">Техномарт</h1>
+      <section class="promo">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <div class="container">
+          <ul class="promo__list">
+            <li class="promo__item promo__item--yellow new">
+              <h3 class="promo__item-title">Материалы</h3>
+              <a href="" class="promo__link">на любой вкус</a>
+              <div
+                class="promo__img"
+                style="background-image: url(assets/img/promo/Ведро-краски.svg)"
+              ></div>
+            </li>
+            <li class="promo__item promo__item--blue">
+              <h3 class="promo__item-title">Инструмент</h3>
+              <a href="" class="promo__link">на все случаи</a>
+              <div
+                class="promo__img"
+                style="background-image: url(assets/img/promo/Дрель.svg)"
+              ></div>
+            </li>
+            <li class="promo__item promo__item--italic">
+              <h3 class="promo__item-title">Техника</h3>
+              <a href="" class="promo__link">для стройки</a>
+              <div
+                class="promo__img"
+                style="background-image: url(assets/img/promo/Трактор.svg)"
+              ></div>
+            </li>
+            <li class="promo__item promo__slider">
+              <div class="promo__slide-1">
+                <h3 class="promo__slide-1-title">Перфораторы</h3>
+                <p class="promo__slide-1-description">
+                  Настоящие мужские игрушки
+                </p>
+                <a
+                  href="catalog.html"
+                  class="promo__slide-1-button button button--accent"
+                >
+                  Открыть каталог
+                </a>
+              </div>
+              <button class="slider__toggle">
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button class="slider__toggle slider__toggle--rigth">
+                <span class="visually-hidden">Вперёд</span>
+              </button>
+              <div class="slider__controll">
+                <div class="slider__radio"></div>
+                <div class="slider__radio slider__radio--checked"></div>
+              </div>
+            </li>
+            <li class="promo__item promo__item--green">
+              <h3 class="promo__item-title">Скидки 50%</h3>
+              <a href="" class="promo__link">На 350 товаров</a>
+              <div
+                class="promo__img"
+                style="background-image: url(assets/img/promo/Тележка.svg)"
+              ></div>
+            </li>
+            <li class="promo__item promo__item--yellow">
+              <h3 class="promo__item-title">Доставка</h3>
+              <a href="" class="promo__link">Бесплатно</a>
+              <div
+                class="promo__img"
+                style="background-image: url(assets/img/promo/Грузовик.svg)"
+              ></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pop-products">
+        <div class="container">
+          <header class="pop-products__header">
+            <h2 class="pop-products__title">Популярные товары:</h2>
+            <a
+              href="catalog.html"
+              class="pop-products__button button button--accent"
+            >
+              все популярные товары
+            </a>
+          </header>
+          <ul class="pop-products__list">
+            <li class="pop-products__item">
+              <div class="pop-products__wrapper">
+                <a href="" class="pop-products__photo">
+                  <img
+                    src="assets/img/pop-products/product-1.jpg"
+                    alt="карточка товара"
+                    width="144"
+                    height="128"
+                  />
+                </a>
+                <button class="button button__buy">Купить</button>
+                <button class="button button__bookmarks">В закладки</button>
+              </div>
+              <h3 class="pop-products__title">Перфоратор BOSC HBFG 6000</h3>
+              <p class="pop-products__old-price">30500 Р.</p>
+              <button class="pop-products__button button button--accent">
+                25500 Р.
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer class="main-footer"></footer>
     <script src="assets/js/script.js"></script>
   </body>

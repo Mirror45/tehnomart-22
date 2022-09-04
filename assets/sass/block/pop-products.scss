@@ -1,0 +1,28 @@
+.pop-products__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.pop-products__item {
+  width: 220px;
+  height: 318px;
+
+  .button__buy,
+  .button__bookmarks {
+    display: none;
+  }
+
+  &:hover {
+    .button__buy,
+    .button__bookmarks {
+      display: block;
+    }
+
+    .pop-products__photo {
+      display: none;
+    }
+  }
+}
