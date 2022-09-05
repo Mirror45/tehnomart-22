@@ -1,0 +1,36 @@
+.brands__header {
+  min-height: 89px;
+  display: flex;
+  padding-left: 28px;
+  padding-right: 19px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f5f0;
+}
+
+.brands__title {
+  color: #32425c;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.brands__header .button {
+  min-width: 192px;
+}
+
+.brands__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 145px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brands__img {
+  object-fit: scale-down;
+}
