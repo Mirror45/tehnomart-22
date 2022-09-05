@@ -26,6 +26,8 @@
   grid-column: 2 / -1;
 }
 
+/* Sort */
+
 .catalog__sort {
   display: flex;
   align-items: center;
@@ -105,6 +107,8 @@
   margin-right: 21px;
 }
 
+/* card-product */
+
 .card-product__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -128,6 +132,30 @@
   padding-bottom: 21px;
 
   border: 1px solid #eaeaea;
+
+  .button--bookmarks {
+    display: none;
+    cursor: pointer;
+  }
+
+  .button--buy {
+    margin-bottom: 10px;
+    display: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15));
+
+    .button--buy,
+    .button--bookmarks {
+      display: block;
+    }
+
+    .card-product__photo {
+      display: none;
+    }
+  }
 }
 
 .card-product__photo {
@@ -136,7 +164,17 @@
   min-height: 128px;
 }
 
+.card-product__wrapper {
+  min-height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-product__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 7px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -145,14 +183,14 @@
   color: $basic-black;
 }
 
-.card-product__text {
+.card-product__old-price {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-
-  text-decoration: line-through;
+  text-transform: uppercase;
+  text-decoration-line: line-through;
   color: #a9a9a9;
 }
 
@@ -202,4 +240,237 @@
   color: $basic-white;
   background-color: $basic-red;
   border: 1px solid $basic-red;
+}
+
+/* filter */
+
+.filter__header {
+  margin-bottom: 14px;
+  padding: 10px 18px;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+}
+
+.range-filter {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 140px;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  width: 60px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 4px;
+  background: #f7f3ec;
+}
+
+.price-controls input {
+  width: 95px;
+}
+
+.filter fieldset {
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 26px;
+  margin: 0;
+  margin-bottom: 18px;
+
+  border: none;
+}
+
+.filter fieldset:nth-child(2) {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.filter fieldset:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.filter legend {
+  margin-bottom: 15px;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #c5c5c5;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -3px;
+
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #c5c5c5;
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked + label::before {
+  border: none;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: -35px;
+
+  width: 23px;
+  height: 27px;
+
+  border: none;
+  background-image: url("../img/catalog/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -35px;
+  top: -3px;
+
+  width: 25px;
+  height: 25px;
+
+  border: 4px solid #c5c5c5;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: -27px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #c5c5c5;
+  border-radius: 50%;
+}
+
+.filter__button {
+  padding: 10px 78px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: $basic-black;
+  border: 1px solid #eaeaea;
+
+  &:hover {
+    border: 1px solid #c5c5c5;
+  }
+
+  &:active {
+    border: 1px solid $basic-red;
+  }
 }
