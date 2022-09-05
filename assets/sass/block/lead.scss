@@ -1,0 +1,32 @@
+.lead {
+  margin-top: 48px;
+  padding-top: 64px;
+  padding-bottom: 68px;
+  background-color: #f1f5f7;
+}
+
+.lead__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: $basic-black;
+}
+
+.lead__text {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: $basic-black;
+}
