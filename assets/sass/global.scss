@@ -144,3 +144,11 @@ img {
     background-color: $basic-red;
   }
 }
+
+.wrapper-columns {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  padding-top: 70px;
+  margin-bottom: 70px;
+}

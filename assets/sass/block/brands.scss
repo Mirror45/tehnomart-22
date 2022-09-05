@@ -1,3 +1,7 @@
+.brands {
+  margin-bottom: 70px;
+}
+
 .brands__header {
   min-height: 89px;
   display: flex;
@@ -31,6 +35,15 @@
   list-style: none;
 }
 
+.brands__item {
+  border: 1px solid #eaeaea;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
 .brands__img {
   object-fit: scale-down;
+  height: 100%;
 }

@@ -1,0 +1,56 @@
+.company__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company__wrapper {
+  display: grid;
+  min-height: 147px;
+}
+
+.company__text {
+  margin: 0;
+  padding: 0;
+  width: 451px;
+  font-size: 13px;
+  line-height: 24px;
+
+  &:last-child {
+    align-self: end;
+  }
+}
+
+.company__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.company__item {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 37px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-red;
+  }
+}
+
+.company .button {
+  min-width: 220px;
+}
