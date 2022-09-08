@@ -21,7 +21,74 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="page__body">
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="main-header__user-navigation user-navigation">
+        <div class="container">
+          <div class="user-navigation__wrapper">
+            <a href="#" class="user-navigation__logo button button--accent">
+              <span class="visually-hidden">Техномарт</span>
+            </a>
+          </div>
+          <div
+            class="user-navigation__search user-navigation__search--disabled"
+          >
+            <input type="search" placeholder="Поиск:" />
+          </div>
+          <a href="" class="user-navigation__bookmarks">Закладки: 0</a>
+          <a href="" class="user-navigation__basket">Корзина: 0</a>
+          <a href="" class="user-navigation__checkout button button--secondary">
+            Оформить заказ
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-header__user-login user-login">
+          <p class="user-login__description">
+            Интернет-магазин<br />
+            строительных материалов<br />
+            и инструментов для ремонта
+          </p>
+          <div class="user-login__wrapper-address">
+            <a href="tel:+78125550555" class="user-login__tel"
+              >+7 (812) 555-05-55</a
+            >
+            <p class="user-login__address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="user-login__wrapper-login">
+            <button class="user-login__login">Войти</button>
+            <button class="user-login__registration">Регистрация</button>
+          </div>
+        </div>
+        <nav class="main-header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Компания</a>
+            </li>
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Спецпредложения</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main class="page__main">
       <h1 class="visually-hidden">Техномарт</h1>
       <section class="promo">
@@ -339,9 +406,11 @@
             <li class="company__item">Автотрейдинг</li>
             <li class="company__item">ЖелДорЭкспедиция</li>
           </ul>
-          <button class="button button--accent">Подробнее о компании</button>
+          <button class="button button--accent" id="open__modal-company">
+            Подробнее о компании
+          </button>
 
-          <section class="modal modal-company modal--active">
+          <section class="modal modal-company">
             <form action="" method="post" class="modal-company__form">
               <div class="modal-company__wrapper">
                 <div class="modal-company__column">
@@ -409,9 +478,24 @@
             width="300"
             height="158"
           />
-          <button class="button button--accent">
+          <button class="button button--accent" id="open__modal-contacts">
             Заблудились? Напишите нам!
           </button>
+
+          <modal class="modal modal-contacts">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619325303108!2d30.3211096160951!3d59.93845866907515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1662624580117!5m2!1sru!2sua"
+              width="943"
+              height="449"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <button class="modal__close">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </modal>
         </section>
       </div>
     </main>
