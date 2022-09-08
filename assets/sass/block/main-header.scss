@@ -1,0 +1,318 @@
+.main-header {
+  min-height: 320px;
+  background-color: #f1f5f7;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.user-navigation {
+  background-color: #293449;
+  color: $basic-white;
+}
+
+.user-navigation .container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 42px;
+}
+
+.user-navigation__wrapper {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+}
+
+.user-navigation__logo {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  height: 47px;
+  background-image: url(../img/main-header/logo-technomart.svg);
+  background-repeat: no-repeat;
+  background-position: center 12px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+
+  &:hover {
+    background-color: $basic-red;
+  }
+
+  &:active {
+    background-color: $status-accent-active;
+  }
+}
+
+.user-navigation__search {
+  position: relative;
+  width: 270px;
+  display: flex;
+  background-color: #f1f5f7;
+
+  input {
+    padding-left: 42px;
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    color: $basic-black;
+
+    &::placeholder {
+      color: currentColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 17px;
+    height: 17px;
+    mask-image: url(../img/main-header/search.svg);
+    background-color: $basic-red;
+  }
+
+  &--disabled {
+    background-color: transparent;
+
+    input {
+      color: $basic-white;
+    }
+
+    &::before {
+      background-color: $basic-white;
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.user-navigation__bookmarks {
+  position: relative;
+  width: 150px;
+  padding: 9px;
+  padding-left: 43px;
+  text-decoration: none;
+  color: inherit;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    width: 14px;
+    height: 16px;
+    background-image: url(../img/main-header/bookmarks.svg);
+    opacity: 0.3;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #161d29;
+    opacity: 0.3;
+  }
+}
+
+.user-navigation__basket {
+  position: relative;
+  width: 150px;
+  padding: 9px;
+  padding-left: 49px;
+  text-decoration: none;
+  color: inherit;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 26px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/main-header/cart.svg);
+    opacity: 0.3;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #161d29;
+    opacity: 0.3;
+  }
+}
+
+.user-navigation__checkout {
+  width: 150px;
+  text-transform: none;
+
+  &:active {
+    color: rgba($basic-white, 0.5);
+  }
+}
+
+.user-login {
+  min-height: 158px;
+  padding-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-login__description {
+  width: 197px;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  color: $basic-red;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.user-login__wrapper-address {
+  width: 270px;
+  text-align: center;
+}
+
+.user-login__tel {
+  position: relative;
+  display: block;
+  margin-bottom: 3px;
+  padding: 8px;
+  padding-left: 74px;
+  width: 270px;
+  border: 3px solid $basic-white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  text-decoration: none;
+  color: $basic-red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 39px;
+    top: 13px;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/main-header/phone.svg);
+  }
+}
+
+.user-login__address {
+  padding: 0;
+  margin: 0;
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-login__wrapper-login {
+  display: flex;
+  height: 52px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-login__login {
+  position: relative;
+  width: 121px;
+  padding: 12px;
+  padding-left: 45px;
+  margin-right: 10px;
+  background-color: $basic-white;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 17px;
+    width: 20px;
+    height: 17px;
+    mask-image: url(../img/main-header/login.svg);
+    background-color: $basic-greylight;
+  }
+
+  &:hover {
+    color: $basic-red;
+
+    &::before {
+      background-color: $basic-grey;
+    }
+  }
+
+  &:active {
+    color: $basic-greylight;
+
+    &::before {
+      background-color: $basic-greylight;
+    }
+  }
+}
+
+.user-login__registration {
+  width: 150px;
+  padding: 12px;
+  background-color: $basic-white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $basic-red;
+  }
+
+  &:active {
+    color: $basic-greylight;
+  }
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+  display: flex;
+  list-style: none;
+  color: $basic-white;
+  background-color: #32425c;
+  text-align: center;
+}
+
+.nav__item {
+  flex-grow: 1;
+}
+
+.nav__link {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: inset 0px -5px 0px #293449;
+
+  &:hover {
+    background-color: #293449;
+  }
+
+  &:active {
+    background-color: #1d2739;
+    color: rgba($basic-white, 0.5);
+  }
+}

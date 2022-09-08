@@ -2,15 +2,14 @@
 @import "font.scss";
 @import "global.scss";
 @import "block/main-header.scss";
-
-@import "block/breadcrumbs.scss";
-@import "block/catalog.scss";
-@import "block/lead.scss";
-@import "block/main-footer.scss";
 @import "block/promo.scss";
 @import "block/popular-product.scss";
 @import "block/brands.scss";
 @import "block/services.scss";
 @import "block/company.scss";
 @import "block/contacts.scss";
-@import "block/modal.scss";
+@import "block/modal/modal.scss";
+@import "block/catalog.scss";
+@import "block/breadcrumbs.scss";
+@import "block/lead.scss";
+@import "block/main-footer.scss";
