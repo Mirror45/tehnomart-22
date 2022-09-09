@@ -1,21 +1,21 @@
 {
-  "name": "new",
+  "name": "tehnomart",
   "version": "1.0.0",
-  "description": "Новый",
+  "description": "Техномарт",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mirror45/new.git"
+    "url": "git+https://github.com/Mirror45/tehnomart.git"
   },
   "author": "Mirror",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mirror45/new/issues"
+    "url": "https://github.com/Mirror45/tehnomart/issues"
   },
-  "homepage": "https://github.com/Mirror45/new#readme",
+  "homepage": "https://github.com/Mirror45/tehnomart#readme",
   "dependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
@@ -33,6 +33,7 @@
     "gulp-terser": "^2.1.0",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.54.7"
+    "sass": "^1.54.7",
+    "svg-to-ico": "^1.0.11"
   }
 }

@@ -46,6 +46,7 @@ img {
   background-color: $basic-red;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 
   &--accent {
     &:hover {
@@ -82,7 +83,7 @@ img {
       width: 15px;
       height: 15px;
       margin-right: 8px;
-      background-image: url(../img/pop-products/icon-cart.svg);
+      background-image: url(../img/catalog/catalog__icon-cart.svg);
     }
 
     &:hover {
