@@ -131,11 +131,6 @@ exports.woff = woff;
 // Icon
 
 const icon = () => {
-  svgtoico({
-    input_name: Key + "/build/assets/img/icon/favicon.svg",
-    output_name: Key + "/build/assets/img/icon/favicon.ico",
-    sizes: [16, 24, 32],
-  });
   return src([
     Key + "/assets/img/icon/favicon.ico",
     Key + "/assets/img/icon/manifest.webmanifest",
