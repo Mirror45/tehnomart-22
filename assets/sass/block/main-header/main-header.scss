@@ -27,7 +27,7 @@
   top: 0;
   width: 220px;
   height: 47px;
-  background-image: url(../img/main-header/logo-technomart.svg);
+  background-image: url(../img/main-header/main-header__logo-technomart.svg);
   background-repeat: no-repeat;
   background-position: center 12px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
@@ -70,7 +70,7 @@
     left: 17px;
     width: 17px;
     height: 17px;
-    mask-image: url(../img/main-header/search.svg);
+    mask-image: url(../img/main-header/main-header__search.svg);
     background-color: $basic-red;
   }
 
@@ -111,7 +111,7 @@
     left: 20px;
     width: 14px;
     height: 16px;
-    background-image: url(../img/main-header/bookmarks.svg);
+    background-image: url(../img/main-header/main-header__bookmarks.svg);
     opacity: 0.3;
   }
 
@@ -140,7 +140,7 @@
     left: 26px;
     width: 15px;
     height: 15px;
-    background-image: url(../img/main-header/cart.svg);
+    background-image: url(../img/main-header/main-header__cart.svg);
     opacity: 0.3;
   }
 
@@ -208,7 +208,7 @@
     top: 13px;
     width: 19px;
     height: 19px;
-    background-image: url(../img/main-header/phone.svg);
+    background-image: url(../img/main-header/main-header__phone.svg);
   }
 }
 
@@ -245,7 +245,7 @@
     top: 17px;
     width: 20px;
     height: 17px;
-    mask-image: url(../img/main-header/login.svg);
+    mask-image: url(../img/main-header/main-header__login.svg);
     background-color: $basic-greylight;
   }
 

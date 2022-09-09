@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="ru" class="page">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tehnomart</title>
-    <link rel="icon" href="assets/img/icon/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="assets/img/icon/favicon.svg" type="image/svg+xml" />
+    <title>Техномарт</title>
+    <link
+      rel="short icon"
+      href="assets/img/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="short icon"
+      href="assets/img/icon/favicon.png"
+      type="image/png"
+    />
     <link
       rel="apple-touch-icon"
       href="assets/img/icon/180.png"
@@ -20,9 +26,74 @@
     <link rel="stylesheet" href="assets/css/libs/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body class="page__body">
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="main-header__user-navigation user-navigation">
+        <div class="container">
+          <div class="user-navigation__wrapper">
+            <a href="#" class="user-navigation__logo button button--accent">
+              <span class="visually-hidden">Техномарт</span>
+            </a>
+          </div>
+          <div
+            class="user-navigation__search user-navigation__search--disabled"
+          >
+            <input type="search" placeholder="Поиск:" />
+          </div>
+          <a href="" class="user-navigation__bookmarks">Закладки: 0</a>
+          <a href="" class="user-navigation__basket">Корзина: 0</a>
+          <a href="" class="user-navigation__checkout button button--secondary">
+            Оформить заказ
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-header__user-login user-login">
+          <p class="user-login__description">
+            Интернет-магазин<br />
+            строительных материалов<br />
+            и инструментов для ремонта
+          </p>
+          <div class="user-login__wrapper-address">
+            <a href="tel:+78125550555" class="user-login__tel"
+              >+7 (812) 555-05-55</a
+            >
+            <p class="user-login__address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="user-login__wrapper-login">
+            <button class="user-login__login">Войти</button>
+            <button class="user-login__registration">Регистрация</button>
+          </div>
+        </div>
+        <nav class="main-header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Компания</a>
+            </li>
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Спецпредложения</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="page__catalog">
       <h1 class="visually-hidden">Каталог Магазина Техномарт</h1>
@@ -33,7 +104,7 @@
             <li class="breadcrumbs__item">
               <a href="#" class="breadcrumbs__link">
                 <img
-                  src="assets/img/breadcrumbs/icon-home.svg"
+                  src="assets/img/breadcrumbs/breadcrumbs__icon-home.svg"
                   alt="Главная страница"
                   width="14"
                   height="12"
@@ -202,6 +273,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-1.png"
+                      srcset="assets/img/catalog/product-1.webp"
                       alt="карточка товара"
                       width="144"
                       height="128"
@@ -223,6 +295,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-1.png"
+                      srcset="assets/img/catalog/product-1.webp"
                       alt="карточка товара"
                       width="144"
                       height="128"
@@ -244,6 +317,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-1.png"
+                      srcset="assets/img/catalog/product-1.webp"
                       alt="карточка товара"
                       width="144"
                       height="128"
@@ -265,6 +339,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-2.png"
+                      srcset="assets/img/catalog/product-2.webp"
                       alt="карточка товара"
                       width="127"
                       height="112"
@@ -286,6 +361,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-1.png"
+                      srcset="assets/img/catalog/product-1.webp"
                       alt="карточка товара"
                       width="144"
                       height="128"
@@ -307,6 +383,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-2.png"
+                      srcset="assets/img/catalog/product-2.webp"
                       alt="карточка товара"
                       width="127"
                       height="112"
@@ -328,6 +405,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-2.png"
+                      srcset="assets/img/catalog/product-2.webp"
                       alt="карточка товара"
                       width="127"
                       height="112"
@@ -349,6 +427,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-1.png"
+                      srcset="assets/img/catalog/product-1.webp"
                       alt="карточка товара"
                       width="144"
                       height="128"
@@ -370,6 +449,7 @@
                   <a href="" class="card-product__photo">
                     <img
                       src="assets/img/catalog/product-2.png"
+                      srcset="assets/img/catalog/product-2.webp"
                       alt="карточка товара"
                       width="127"
                       height="112"
@@ -429,6 +509,7 @@
           <a href="index.html" class="main-footer__logo">
             <img
               src="assets/img/main-footer/logo-technomart.png"
+              srcset="assets/img/main-footer/logo-technomart.webp"
               alt="Логотип Техномарт"
               width="136"
               height="21"
