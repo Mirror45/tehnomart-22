@@ -1,3 +1,146 @@
 .main-footer {
   background-color: #32425c;
 }
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-row-top {
+  margin-bottom: 20px;
+}
+
+.footer-row-middle {
+  margin-bottom: 54px;
+}
+
+.footer-row-bottom {
+  background-color: #293449;
+  height: 107px;
+  padding-top: 35px;
+}
+
+.main-footer__logo {
+  width: 220px;
+  height: 68px;
+  background-image: url(../img/main-header/main-header__logo-technomart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+
+  &:hover {
+    background-color: $basic-red;
+  }
+
+  &:active {
+    background-color: $status-accent-active;
+  }
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: mone;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-row-top .navigation__list {
+  align-self: end;
+  color: $basic-white;
+  width: 550px;
+}
+
+.footer-row-middle .navigation__list {
+  color: $special-ylellowligth;
+  width: 525px;
+  align-self: center;
+}
+
+.main-footer__contacts {
+  margin: 0;
+  padding: 0;
+  color: $basic-white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  color: $basic-white;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-right: 117px;
+}
+
+.feedback__title,
+.developed__title {
+  margin: 0;
+  padding: 0;
+  color: $basic-white;
+}
+
+.feedback__link,
+.developed__link {
+  text-decoration: none;
+  color: $special-ylellowligth;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $basic-red;
+  }
+}
+
+.social__link {
+  position: relative;
+  display: inline-block;
+  margin-right: 1px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #212a3a;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover {
+    background-color: $basic-red;
+  }
+}
